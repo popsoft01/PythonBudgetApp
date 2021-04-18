@@ -6,13 +6,13 @@ class Budget:
 
     def __str__(self):
         title = f"{self.name:*^30}\n"
-
+        items = ""
         total = 0
         for item in self.ledger:
-            item += f"{item['description'][0:23]:23}" + f"{item['amount']:>7.2f}" + '\n'
+            items += f"{item['description'][0:23]:23}" + f"{item['amount']:>7.2f}" + '\n'
             total += item['amount']
-            output = title + item + "total:" + total
-            return output
+        output = title + items + "total:" + str(total)
+        return output
 
     def deposit(self, amount, description=""):
         self.ledger.append({"amount": amount, "description": description})
