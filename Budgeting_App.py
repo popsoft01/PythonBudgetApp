@@ -25,10 +25,10 @@ class Budget:
         return False
 
     def check_balance(self) -> float:
-        total_cash = 0
+        balance = 0
         for item in self.ledger:
-            total_cash += item["amount"]
-            return total_cash
+            balance += item["amount"]
+            return balance
         return False
 
     def transfer(self, amount, category):
