@@ -2,16 +2,16 @@ class Budget:
 
     def __init__(self, name):
         self.name = name
-        self.ledger = list()
+        self.ledger = []
 
     def __str__(self):
         title = f"{self.name:*^30}\n"
         items = ""
-        total = 0
+        total_balance = 0
         for item in self.ledger:
             items += f"{item['description'][0:23]:23}" + f"{item['amount']:>7.2f}" + '\n'
-            total += item['amount']
-        output = title + items + "total:" + str(total)
+            total_balance += item['amount']
+        output = title + items + "total balance:" + str(total_balance)
         return output
 
     def deposit(self, amount, description=""):
