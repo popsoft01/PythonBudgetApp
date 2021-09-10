@@ -16,6 +16,13 @@ class MyTestCase(unittest.TestCase):
     def test_sub(self):
         self.assertEqual(3, Calculator.substract(5, 2))
 
+    def test_sub_with_negative_num(self):
+        self.assertEqual(1, Calculator.substract(-2, -3))
+
+
+    def test_add_with_zero_num(self):
+        self.assertRaises(-1, Calculator.add(0, 3))
+
 
 if __name__ == '__main__':
     unittest.main()
