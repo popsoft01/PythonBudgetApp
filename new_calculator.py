@@ -1,16 +1,20 @@
 def calculator(number, second_number, operator):
-    if operator == "+":
-        return number + second_number
-    elif operator == "-":
-        return number - second_number
-    elif operator == "*":
-        return number * second_number
-    elif operator == "/":
-        return number / second_number
-    elif operator == "%":
-        return number % second_number
-    else:
-        raise ValueError("not valid operator")
+    try:
+        if operator == "+":
+            return number + second_number
+        elif operator == "-":
+            return number - second_number
+        elif operator == "*":
+            return number * second_number
+        elif operator == "/":
+            return number / second_number
+        elif operator == "%":
+            return number % second_number
+        else:
+            raise ValueError("not valid operator")
+    except:
+        print("wrong operator")
+
 
 
 number_one = int(input('Enter first number'))
