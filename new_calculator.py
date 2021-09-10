@@ -10,7 +10,7 @@ def calculator(number, second_number, operator):
     elif operator == "%":
         return number % second_number
     else:
-        raise ValueError
+        raise ValueError("not valid operator")
 
 
 number_one = int(input('Enter first number'))
