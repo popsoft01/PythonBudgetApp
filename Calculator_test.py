@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(5, Calculator.add(2, 3))  # add assertion here
 
     def test_add2(self):
-        self.assertEqual(5, Calculator.add(2, -3))
+        self.assertEqual(-1, Calculator.add(2, -3))
 
     def test_sub(self):
         self.assertEqual(3, Calculator.substract(5, 2))
