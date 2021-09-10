@@ -19,9 +19,8 @@ class MyTestCase(unittest.TestCase):
     def test_sub_with_negative_num(self):
         self.assertEqual(1, Calculator.substract(-2, -3))
 
-
     def test_add_with_zero_num(self):
-        self.assertRaises(-1, Calculator.add(0, 3))
+        self.assertRaises()
 
 
 if __name__ == '__main__':
