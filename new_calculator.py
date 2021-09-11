@@ -16,9 +16,9 @@ def calculator(number, second_number, operator):
         print("wrong operator")
 
 
-
 number_one = int(input('Enter first number'))
 number_two = int(input('Enter the second number'))
 operator = input('Enter the operator')
 result = calculator(number_one, number_two, operator)
 print(result)
+ 
