@@ -14,6 +14,9 @@ class user:
     def set_user_email(self, user_email):
         self.user_email = user_email
 
+    def set_user_details(self, user_details):
+        self.user_detail = user_details
+
     def get_username(self):
         return self.user_username
 
