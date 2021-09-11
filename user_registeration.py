@@ -1,4 +1,3 @@
-
 class user_registration:
     def __init__(self, user_email, user_username, user_password):
         self.user_email = user_email
@@ -6,14 +5,17 @@ class user_registration:
         self.user_password = user_password
         self.user_detail = {}
 
+    def registration(self, new_email, new_username, new_password):
+        if new_email == self.user_email and new_username == self.user_username and new_password == self.user_password:
+            self.user_detail[new_username] = user_registration
+            print(self.user_detail)
 
-    # def registration(new_email, new_username, new_password):
-    #     if len(new_email) >= 10 and len(new_username) >= 5 and len(new_password):
-    #         user_detail[new_email] = new_email
-    # print(user_detil)a
-    # return (f"Registration successful \n your registration details are {new_email},"
-    #         f" {new_password}, and {new_password}")
 
 # def login(user_email, username, user_password):
 #     user_detail = registration(user_email, username, user_password)
 #     if user_detail == login()
+
+
+
+p1 = user_registration("sasdddddd", "qweerrrr", "yuuiiiii")
+p1.registration("sasdddddd", "qweerrrr", "yuuiiiii")
