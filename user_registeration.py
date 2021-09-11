@@ -16,6 +16,5 @@ class user_registration:
 #     if user_detail == login()
 
 
-
 p1 = user_registration("sasdddddd", "qweerrrr", "yuuiiiii")
 p1.registration("sasdddddd", "qweerrrr", "yuuiiiii")
